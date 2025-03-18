@@ -1,0 +1,13 @@
+Deploy PV, PVC de forma dinamica. Funcionando perfeitamente em 05/04/2023
+
+Arquivo sc.txt renomeado para nao excluir quando executar apply em todo o diretorio
+
+##Connect to pod
+kubectl exec -ti efs-app -- tail -f /data/out
+
+ou
+
+kubectl exec -ti efs-app -- /bin/bash
+
+
+https://github.com/kubernetes-sigs/aws-efs-csi-driver/tree/master/examples/kubernetes/dynamic_provisioning
